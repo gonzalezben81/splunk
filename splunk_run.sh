@@ -23,12 +23,12 @@ http://$SG_SERVICE_CONTROLLER_IP:8000/
 echo;
 
 # download
-wget -O splunk-6.1.3-220630-Linux-x86_64.tgz 'http://15.126.241.150/splunk-6.1.3-220630-Linux-x86_64.tgz'
+wget -O splunklight-7.2.6-c0bf0f679ce9-Linux-x86_64.tgz 'https://www.splunk.com/bin/splunk/DownloadActivityServlet?architecture=x86_64&platform=linux&version=7.2.6&product=splunk_light&filename=splunklight-7.2.6-c0bf0f679ce9-Linux-x86_64.tgz&wget=true'
 
 # extract, move, cleanup
-tar xvfz splunk-6.1.3-220630-Linux-x86_64.tgz
+tar xvfz splunklight-7.2.6-c0bf0f679ce9-Linux-x86_64.tgz
 mv splunk /opt/splunk
-rm splunk-6.1.3-220630-Linux-x86_64.tgz
+rm splunklight-7.2.6-c0bf0f679ce9-Linux-x86_64.tgz
 
 # whack on inputs.conf file
 echo "
